@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Models\" />
+    <Folder Include="Mapping\" />
+    <Folder Include="MongoDBModels\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ZDBACKOFFICE.Common\ZDBACKOFFICE.Common.csproj" />
+    <ProjectReference Include="..\ZDBACKOFFICE.Entity\ZDBACKOFFICE.Entity.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="8.0.0" />
+    <PackageReference Include="MongoDB.Bson" Version="2.7.2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Models\Audit.UserCareer" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Models\System.Operator" />
+  </ItemGroup>
+</Project>

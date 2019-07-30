@@ -1,0 +1,16 @@
+img{
+    max-width: 100%;
+}
+
+Input {
+    width: 50px;
+    margin: 0 8px 8px 0;
+}
+
+.trade-search-form .ant-form-item {
+    display: flex;
+  }
+  
+  .trade-search-form .ant-form-item-control-wrapper {
+    flex: 1;
+  }

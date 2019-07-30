@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Neo4j\" />
+    <Folder Include="MongoDB\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ZDBACKOFFICE.Core\ZDBACKOFFICE.Core.csproj" />
+    <ProjectReference Include="..\ZDBACKOFFICE.Entity\ZDBACKOFFICE.Entity.csproj" />
+    <ProjectReference Include="..\ZDBACKOFFICE.Common\ZDBACKOFFICE.Common.csproj" />
+    <ProjectReference Include="..\ZDRedisCore\ZDRedisCore.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="UserIDCard.cs" />
+    <Compile Remove="Neo4j\Driver.cs" />
+    <Compile Remove="MongoDB\MomentsFilter.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Neo4j.Driver" Version="1.7.0" />
+    <PackageReference Include="MongoDB.Driver" Version="2.7.2" />
+    <PackageReference Include="StoredProcedureEFCore" Version="0.3.10" />
+    <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.1.1" />
+    <PackageReference Include="MongoDB.Bson" Version="2.7.2" />
+    <PackageReference Include="MongoDB.Driver.Core" Version="2.7.2" />
+  </ItemGroup>
+</Project>

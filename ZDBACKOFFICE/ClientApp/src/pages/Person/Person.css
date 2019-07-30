@@ -1,0 +1,7 @@
+.person-search-form .ant-form-item {
+    display: flex;
+  }
+  
+  .person-search-form .ant-form-item-control-wrapper {
+    flex: 1;
+  }

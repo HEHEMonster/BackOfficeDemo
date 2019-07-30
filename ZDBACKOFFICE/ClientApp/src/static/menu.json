@@ -1,0 +1,151 @@
+{
+  "menus": [
+    {
+      "title": "首页",
+      "key": "/dashboard",
+      "icon": "pie-chart",
+      "hasSub": false
+    },
+    {
+      "title": "审核",
+      "key": "/audit",
+      "icon": "user",
+      "hasSub": true,
+      "items": [
+        {
+          "title": "客户审核",
+          "key": "/audit/person",
+          "to": "/audit/person",
+          "permissions": [
+            "客户审核"
+          ]
+        },
+        {
+          "title": "身份证审核",
+          "key": "/audit/idcard",
+          "to": "/audit/idcard",
+          "permissions": [
+            "身份证审核"
+          ]
+        },
+        {
+          "title": "名片审核",
+          "key": "/audit/career",
+          "to": "/audit/career",
+          "permissions": [
+            "名片审核"
+          ]
+        },
+        {
+          "title": "专栏审核",
+          "key": "/audit/article",
+          "to": "/audit/article",
+          "permissions": [
+            "文章审核",
+            "专栏审核"
+          ]
+        },
+        {
+          "title": "产品审核",
+          "key": "/audit/product",
+          "to": "/audit/product",
+          "permissions": [
+            "产品审核"
+          ]
+        },
+        {
+          "title": "生意圈审核",
+          "key": "/audit/tradeCircleAudit",
+          "to": "/audit/tradeCircleAudit",
+          "permissions": ["生意圈管理"]
+        }, 
+        {
+          "title": "退款审核",
+          "key": "/audit/refund",
+          "to": "/audit/refund",
+          "permissions": [
+            "退款审核"
+          ]
+        },
+        {
+          "title": "举报审核",
+          "key": "/audit/report",
+          "to": "/audit/report",
+          "permissions": ["系统管理"]
+        }
+      ]
+    },
+    {
+      "title": "内容管理分类",
+      "key": "/content",
+      "icon": "solution",
+      "hasSub": true,
+      "items": [
+        {
+          "title": "专栏",
+          "key": "/content/contentArticle",
+          "to": "/content/contentArticle",
+          "permissions": ["专栏内容管理"]
+        },
+        {
+          "title": "产品",
+          "key": "/content/contentProduct",
+          "to": "/content/contentProduct",
+          "permissions": ["产品内容管理"]
+        },
+        {
+          "title": "生意圈",
+          "key": "/content/contentTradeCircle",
+          "to": "/content/contentTradeCircle",
+          "permissions": ["生意圈内容管理"]
+        }
+      ]
+    },
+    {
+      "title": "活动",
+      "key": "/activity",
+      "icon": "solution",
+      "hasSub": true,
+      "items": [
+        {
+          "title": "活动列表",
+          "key": "/activity/list",
+          "to": "/activity/list",
+          "permissions": [
+            "活动管理"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "用户反馈",
+      "key": "/feedback",
+      "icon": "bell",
+      "hasSub": false
+    },
+    {
+      "title": "系统",
+      "key": "/system",
+      "icon": "appstore",
+      "hasSub": true,
+      "items": [
+        {
+          "title": "操作员列表",
+          "key": "/system/operators",
+          "to": "/system/operators",
+          "permissions": [
+            "系统管理"
+          ]
+        },
+        {
+          "title": "角色列表",
+          "key": "/system/roles",
+          "to": "/system/roles",
+          "permissions": [
+            "系统管理"
+          ]
+        }
+      ]
+    }
+  ]
+}
